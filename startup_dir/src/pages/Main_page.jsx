@@ -7,7 +7,7 @@ const Main = () => {
   const rotationAngle_lower = -20; // Adjust the rotation angle as needed
   const translateX_ = -85;
   const translateY_ = -190;
-  const translateX = 50;
+  const translateX = 60;
   const translateY = 90;
 
   const svgStyle = {
@@ -25,7 +25,6 @@ const Main = () => {
     <div>
       <div id="Main">
         <div className="fixed bg-black w-full h-screen flex items-center justify-center">
-          <div className="fixed w-full h-screen flex items-center justify-center bg-noise" />
           <img src={UpperhandSvg} alt="Upperhand" style={svgStyle} />
           <img src={LowerhandSvg} alt="Lowerhand" style={svgStyle_2} />
         </div>

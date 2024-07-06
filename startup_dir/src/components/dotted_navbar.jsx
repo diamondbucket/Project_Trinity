@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 
 const dotted_navbar = () => {
   return (
-    <ul className="py-2 px-3 rounded-full flex space-x-32 border-2 border-dotted border-rose-700">
+    <ul className="py-2 px-7 rounded-full flex space-x-32 border-2 border-dotted border-rose-600">
       <li className="relative group">
         <Link
           to="home"
