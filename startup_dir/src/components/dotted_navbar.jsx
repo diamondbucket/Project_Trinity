@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 
 const dotted_navbar = () => {
   return (
-    <ul className="py-2 px-7 rounded-full flex space-x-32 border-2 border-dotted border-rose-600">
+    <ul className="py-2 px-7 rounded-full flex space-x-32 border-2 border-dotted overflow-hidden border-purple-600">
       <li className="relative group">
         <Link
           to="home"
@@ -28,7 +28,7 @@ const dotted_navbar = () => {
         >
           Resources
         </Link>
-        {/* <div className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-white to-transparent group-hover:bg-current"></div> */}
+      {/* <div className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-white to-transparent"></div>*/}
       </li>
       <li className="relative group">
         <Link
@@ -41,7 +41,7 @@ const dotted_navbar = () => {
         >
           Community
         </Link>
-        {/* <div className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-white to-transparent group-hover:bg-current"></div> */}
+        {/*<div className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-white to-transparent group-hover:bg-current"></div> */}
       </li>
     </ul>
   );

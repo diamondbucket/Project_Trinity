@@ -10,7 +10,7 @@ const Navbar = () => {
   const closeMenu = () => setClick(false);
 
   return (
-    <div className="relative z-10 py-3 bg-black">
+    <div className=" z-10 py-3 overflow-hidden bg-black">
       <div className="py-3 pb-4 md:px-10 px-7 bg-black flex justify-between items-center">
         <Link
           to="main"
