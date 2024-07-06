@@ -8,7 +8,7 @@ import Second_page from "./pages/Second_page";
 function App() {
   return (
     <>
-      <div className="overflow-hidden">
+      <div className="overflow-hidden ">
         <Navbar />
         <dotted_navbar />
         <Main />
