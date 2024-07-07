@@ -4,8 +4,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import UpperhandSvg from "../assets/upperhand_1.svg";
 import LowerhandSvg from "../assets/lowerhand_1.svg";
 import ShinyTriangleSvg from "../assets/shiny_triangle.svg";
-import { useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 
 const Main = () => {
   gsap.registerPlugin(ScrollTrigger);
