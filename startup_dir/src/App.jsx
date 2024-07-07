@@ -9,7 +9,6 @@ function App() {
   return (
     <>
       <div className="overflow-hidden ">
-        <Navbar />
         <dotted_navbar />
         <Main />
         <Second_page />

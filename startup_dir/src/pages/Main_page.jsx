@@ -4,6 +4,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import UpperhandSvg from "../assets/upperhand_1.svg";
 import LowerhandSvg from "../assets/lowerhand_1.svg";
 import ShinyTriangleSvg from "../assets/shiny_triangle.svg";
+import NoiseImage from "../assets/noise.png";
+import Navbar from "../components/Navbar";
 
 const Main = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -71,33 +73,56 @@ const Main = () => {
     transform: `rotate(${rotationAngle_lower}deg) translate(${translateX}px, ${translateY}px)`, // Rotate the SVG by the specified angle
   };
 
+  const noiseBackgroundStyle = {
+    backgroundImage: `url(${NoiseImage})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    opacity: "0.1", // Adjust the opacity as needed
+    position: "absolute",
+    top: 0,
+    left: 0,
+    width: "100%",
+    height: "100%",
+    zIndex: "1",
+  };
+
   const triangleStyle = {
     position: "absolute", // Position it absolutely
     width: "400px", // Adjust width as needed
     height: "400px", // Adjust height as needed
     top: "50%", // Position it in the center vertically
     left: "50%", // Position it in the center horizontally
-    transform: "translate(-45%, -30%)", // Center it perfectly
+    transform: "translate(-45%, -35%)", // Center it perfectly
     zIndex: "1", // Make sure it is above the other SVGs
   };
 
   return (
-    <div>
-      <div id="Main">
-        <div className="overflow-hidden bg-black w-full h-screen flex items-center justify-center">
+    <div
+      style={{
+        position: "relative",
+        display: "flex",
+        flexDirection: "column",
+        minHeight: "100vh",
+      }}
+    >
+      <div style={noiseBackgroundStyle}></div>
+      <Navbar />
+      <div id="Main" style={{ flex: "1" }}>
+        <div className="overflow-hidden bg-black w-full h-full flex items-center justify-center">
           <img
             id="image"
             src={UpperhandSvg}
             alt="Upperhand"
             style={svgStyle}
-            className="z-0"
+            className="z-10"
           />
           <img
             id="image_2"
             src={LowerhandSvg}
             alt="Lowerhand"
             style={svgStyle_2}
-            className="z-0"
+            className="z-10"
           />
           <img
             id="triangle"
