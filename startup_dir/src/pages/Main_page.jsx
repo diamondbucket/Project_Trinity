@@ -97,6 +97,13 @@ const Main = () => {
     zIndex: "1", // Make sure it is above the other SVGs
   };
 
+  const textStyle = {
+    color: "white",
+    fontSize: "24px",
+    textAlign: "center",
+    zIndex: "5",
+  };
+
   return (
     <div
       style={{
@@ -110,6 +117,42 @@ const Main = () => {
       <Navbar />
       <div id="Main" style={{ flex: "1" }}>
         <div className="overflow-hidden bg-black w-full h-full flex items-center justify-center">
+          <div
+            style={{
+              position: "absolute",
+              top: "18%",
+              left: "49%",
+              transform: "translate(-50%, -50%)",
+              textAlign: "center",
+              zIndex: "5",
+            }}
+          >
+            <p
+              style={{ ...textStyle, fontSize: "50px" }}
+              className="font-extrabold tracking-wide opacity-10"
+            >
+              TRINITY
+            </p>
+          </div>
+
+          <div
+            style={{
+              position: "absolute",
+              top: "30%",
+              left: "50%",
+              transform: "translate(-50%, -50%)",
+              textAlign: "center",
+              zIndex: "5",
+            }}
+          >
+            <p
+              style={{ ...textStyle, fontSize: "40px" }}
+              className="font-extrabold "
+            >
+              SHAPING AI <span className="text-purple-700">HORIZONS</span>
+            </p>
+          </div>
+
           <img
             id="image"
             src={UpperhandSvg}
