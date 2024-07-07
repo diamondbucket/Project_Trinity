@@ -121,7 +121,7 @@ const Main = () => {
             style={{
               position: "absolute",
               top: "18%",
-              left: "49%",
+              left: "50%",
               transform: "translate(-50%, -50%)",
               textAlign: "center",
               zIndex: "5",
