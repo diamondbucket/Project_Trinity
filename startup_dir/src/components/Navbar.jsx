@@ -28,7 +28,7 @@ const Navbar = () => {
         <div className="hidden md:flex items-center space-x-4">
           <DottedNavbar />
         </div>
-        <div>
+        <div className="z-30">
           <JoinUsButton />
         </div>
         <div className="block md:hidden">

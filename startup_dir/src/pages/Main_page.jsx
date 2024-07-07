@@ -101,10 +101,10 @@ const Main = () => {
     <div
       style={{
         position: "relative",
-        display: "flex",
-        flexDirection: "column",
+
         minHeight: "100vh",
       }}
+      className="z-21"
     >
       <div style={noiseBackgroundStyle}></div>
       <Navbar />
