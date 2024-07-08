@@ -79,6 +79,7 @@ const Main = () => {
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
     opacity: "0.1", // Adjust the opacity as needed
+    opacity: "0.09", // Adjust the opacity as needed
     position: "absolute",
     top: 0,
     left: 0,
@@ -143,6 +144,7 @@ const Main = () => {
               transform: "translate(-50%, -50%)",
               textAlign: "center",
               zIndex: "5",
+              opacity: "0.8",
             }}
           >
             <p
