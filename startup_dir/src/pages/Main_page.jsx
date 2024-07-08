@@ -79,6 +79,7 @@ const Main = () => {
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
     opacity: "0.09", // Adjust the opacity as needed
+    opacity: "0.08", // Adjust the opacity as needed
     position: "fixed",
     top: 0,
     left: 0,
