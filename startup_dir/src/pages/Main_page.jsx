@@ -79,7 +79,7 @@ const Main = () => {
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
     opacity: "0.09", // Adjust the opacity as needed
-    position: "absolute",
+    position: "fixed",
     top: 0,
     left: 0,
     width: "100%",
@@ -159,14 +159,14 @@ const Main = () => {
             src={UpperhandSvg}
             alt="Upperhand"
             style={svgStyle}
-            className="z-10"
+            className="z-15"
           />
           <img
             id="image_2"
             src={LowerhandSvg}
             alt="Lowerhand"
             style={svgStyle_2}
-            className="z-10"
+            className="z-15"
           />
           <img
             id="triangle"
