@@ -6,4 +6,3 @@ Startup_portfolio
 2. get inside startup_dir
 3. run this command `npm install` and install the dependencies
 4. to run in localhost run this command `npm run dev`
-5. hi
