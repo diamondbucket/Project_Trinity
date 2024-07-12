@@ -1,6 +1,6 @@
-import React, { useRef } from 'react';
-import { Canvas, useFrame } from '@react-three/fiber';
-import * as THREE from 'three';
+import React, { useRef } from "react";
+import { Canvas, useFrame } from "@react-three/fiber";
+import * as THREE from "three";
 
 const Electron = ({ radius, angleSpeed, particleSize }) => {
   const ref = useRef();
@@ -21,7 +21,12 @@ const Electron = ({ radius, angleSpeed, particleSize }) => {
 const Orbit = ({ radius, color, opacity }) => (
   <mesh>
     <ringGeometry args={[radius - 0.01, radius + 0.01, 64]} />
-    <meshBasicMaterial color={color} side={THREE.DoubleSide} transparent opacity={opacity} />
+    <meshBasicMaterial
+      color={color}
+      side={THREE.DoubleSide}
+      transparent
+      opacity={opacity}
+    />
   </mesh>
 );
 
@@ -33,18 +38,29 @@ const AtomBackground = ({ orbitColor = "#5A639C", orbitOpacity = 0.1 }) => {
   ];
 
   return (
-    <div style={{ width: '100vw', height: '100vh', top: 0, left: 0, zIndex: -1, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-      <Canvas style={{ width: '80vw', height: '100vh' }}>
+    <div
+      style={{
+        width: "100vw",
+        height: "100vh",
+        top: 0,
+        left: 0,
+        zIndex: -1,
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      <Canvas style={{ width: "80vw", height: "100vh" }}>
         <ambientLight intensity={0.5} />
         <pointLight position={[10, 10, 10]} />
-        <spotLight 
-          position={[0, 0, 0]} 
-          angle={Math.PI / 2} 
-          penumbra={0.5} 
-          intensity={1} 
-          distance={4} 
-          decay={2} 
-          color={new THREE.Color(0.5, 0, 0.5)} 
+        <spotLight
+          position={[0, 0, 0]}
+          angle={Math.PI / 2}
+          penumbra={0.5}
+          intensity={1}
+          distance={4}
+          decay={2}
+          color={new THREE.Color(0.5, 0, 0.5)}
         />
         <mesh>
           <sphereGeometry args={[0.5, 32, 32]} />
@@ -52,8 +68,16 @@ const AtomBackground = ({ orbitColor = "#5A639C", orbitOpacity = 0.1 }) => {
         </mesh>
         {electronConfigs.map((config, index) => (
           <React.Fragment key={index}>
-            <Electron radius={config.radius} angleSpeed={config.angleSpeed} particleSize={config.particleSize} />
-            <Orbit radius={config.radius} color={orbitColor} opacity={orbitOpacity} />
+            <Electron
+              radius={config.radius}
+              angleSpeed={config.angleSpeed}
+              particleSize={config.particleSize}
+            />
+            <Orbit
+              radius={config.radius}
+              color={orbitColor}
+              opacity={orbitOpacity}
+            />
           </React.Fragment>
         ))}
       </Canvas>
@@ -62,4 +86,3 @@ const AtomBackground = ({ orbitColor = "#5A639C", orbitOpacity = 0.1 }) => {
 };
 
 export default AtomBackground;
-
