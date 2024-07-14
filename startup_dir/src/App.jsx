@@ -4,6 +4,7 @@ import Main from "./pages/Main_page";
 import Second_page from "./pages/Second_page";
 import Third_Page from "./pages/Third_page";
 import Fourth_page from "./pages/Fourth_page";
+import Fifth_page from "./pages/Fifth_page";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Second_page />
         <Third_Page />
         <Fourth_page />
+        <Fifth_page />
       </div>
     </>
   );

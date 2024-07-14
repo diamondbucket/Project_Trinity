@@ -6,7 +6,7 @@ const ProcessCard = () => {
     <div
       className="bg-white p-8 rounded-3xl shadow-lg w-full max-w-3xl mx-auto relative overflow-hidden"
       style={{ minHeight: "150vh" }}
-    >
+    > 
       <h2 className="text-2xl font-bold mb-4">
         The world moves quickly; we keep up. Clear the clutter with our process
       </h2>

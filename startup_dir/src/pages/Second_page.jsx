@@ -1,6 +1,16 @@
 import React from "react";
 import triangle_vid from "../assets/triangle_vid.mp4";
 
+const BottomGradient = () => {
+  return (
+    <div className="absolute bottom-0 w-full h-20  ">
+      {" "}
+      {/*/bg-gradient-to-t from-[#3b054ef0] via-[#380d48] to-black*/}
+      <div className="bg-transparent  absolute bottom-0 w-full h-full bg-gradient-to-r from-black via-transparent to-black"></div>
+    </div>
+  );
+};
+
 const Second_page = () => {
   return (
     <div className="bg-black h-screen overflow-hidden relative flex-col items-start">
@@ -20,16 +30,12 @@ const Second_page = () => {
           </p>
         </div>
         <div className="flex -mt-24">
-          <video
-            className="p-8 w-[700px] h-[350px]"
-            autoPlay
-            loop
-            muted
-          >
+          <video className="p-8 w-[700px] h-[350px]" autoPlay loop muted>
             <source src={triangle_vid} type="video/mp4" />
           </video>
         </div>
       </div>
+      <BottomGradient />
     </div>
   );
 };

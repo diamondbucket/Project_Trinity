@@ -7,7 +7,7 @@ const MainPage = () => {
       <div className="bg-purple-radial h-screen flex items-center justify-center">
         <div>
           {/* Radial gradient background */}
-          <div className="absolute inset-0 bg-gradient-radial from-purple-500 to-transparent via-purple-700 z-0">
+          <div className="absolute inset-0 bg-gradient from-purple-500 to-transparent via-purple-700 z-0">
             {/* AtomBackground component */}
             <div className="relative z-10">
               <AtomBackground />
