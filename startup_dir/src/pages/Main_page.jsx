@@ -13,13 +13,13 @@ const Main = () => {
   useLayoutEffect(() => {
     gsap.to("#image", {
       x: 0.000001,
-      y: 1,
+      y: 0.1,
       duration: 1,
       scrollTrigger: {
         trigger: "#image",
         start: "bottom 99%",
         end: "",
-        scrub: true,
+        scrub: 0.5,
       },
     });
   }, []);
@@ -31,7 +31,7 @@ const Main = () => {
         trigger: "#image",
         start: "bottom 99%",
         end: "",
-        scrub: true,
+        scrub: 0.5,
       },
     });
   }, []);
@@ -85,7 +85,7 @@ const Main = () => {
     left: 0,
     width: "100%",
     height: "100%",
-    zIndex: "1",
+    zIndex: "2",
   };
 
   const triangleStyle = {

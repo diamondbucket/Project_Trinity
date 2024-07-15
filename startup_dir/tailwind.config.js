@@ -6,6 +6,9 @@ module.exports = {
   theme: {
     fontFamily: { sans: ["Helvetica", "Arial", "sans-serif"] },
     extend: {
+      boxShadow: {
+        glow: "0 0 15px 5px rgba(255, 255, 255, 0.5)",
+      },
       backgroundImage: {
         isometric:
           'url("https://www.transparenttextures.com/patterns/asfalt-light.png")',

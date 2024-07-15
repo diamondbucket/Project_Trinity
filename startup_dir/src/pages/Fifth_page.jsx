@@ -9,7 +9,7 @@ const MeetTheTeam = ({ top = 10, left = 10 }) => {
   return (
     <div className="absolute w-full h-full ">
       <h1
-        className={`absolute z-10 -m-1 text-9xl font-bold bg-gradient-to-r from-zinc-100  to-white inline-block font-[POPPINS] text-transparent bg-clip-text`}
+        className={`absolute -m-1 text-9xl font-bold bg-gradient-to-r from-zinc-100  to-white inline-block font-[POPPINS] text-transparent bg-clip-text`}
         style={position_style}
       >
         Meet the team
@@ -63,9 +63,16 @@ const Fifth_page = () => {
         "https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3534&q=80",
     },
   ];
-
+  const Design = {
+    zIndex: "1", // Lower than the noise background's z-index of 2
+  };
   return (
     <div className="flex items-center justify-center w-full h-full absolute bg-black overflow-hidden">
+      <div
+        className="relative bg-black h-52 w-60 translate-x-36 -z-20"
+        style={Design}
+      />
+
       <MeetTheTeam top={0} />
       <MeetTheTeam top={100} left={10} />
       <MeetTheTeam top={200} left={10} />
@@ -73,8 +80,9 @@ const Fifth_page = () => {
       <MeetTheTeam top={400} left={10} />
       <MeetTheTeam top={500} left={10} />
       <MeetTheTeam top={600} left={10} />
-      <div className="absolute z-10 py-6 px-9 rounded-full bg-black bg-opacity-20 left-50">
-        <div className="flex flex-col z-10">
+
+      <div className="absolute -z-21 py-6 px-9 rounded-full bg-black bg-opacity-20 left-50 shadow-glow">
+        <div className="relative z-20 flex flex-rows z-12">
           <AnimatedTooltip items={people} />
         </div>
       </div>
