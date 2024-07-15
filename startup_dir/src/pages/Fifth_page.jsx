@@ -1,6 +1,7 @@
 import React from "react";
 import { AnimatedTooltip } from "../components/ui/animated-tooltip";
 import building_web from "../assets/building_web.svg";
+import cat from "../assets/cat.svg";
 
 const MeetTheTeam = ({ top = 10, left = 10 }) => {
   const position_style = {
@@ -75,11 +76,20 @@ const Fifth_page = () => {
         alt="svg of builders"
         className="absolute z-20 h-96 w-96 translate-x-78 -translate-y-52"
       />
+      <img
+        src={cat}
+        d="#image6"
+        alt="svg of builders"
+        className="absolute z-30 h-40 w-40 translate-x-96 "
+      />
+
       <div
         className=" bg-black h-80 w-80  translate-x-78 -translate-y-52 -z-20"
         style={Design}
       />
-
+      <h1 className="absolute text-white font-bold text-4xl translate-x-96 translate-y-11 z-40">
+        Be sleow
+      </h1>
       <MeetTheTeam top={0} />
       <MeetTheTeam top={100} left={10} />
       <MeetTheTeam top={200} left={10} />
