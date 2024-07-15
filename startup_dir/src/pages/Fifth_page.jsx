@@ -1,5 +1,6 @@
 import React from "react";
 import { AnimatedTooltip } from "../components/ui/animated-tooltip";
+import building_web from "../assets/building_web.svg";
 
 const MeetTheTeam = ({ top = 10, left = 10 }) => {
   const position_style = {
@@ -68,8 +69,14 @@ const Fifth_page = () => {
   };
   return (
     <div className="flex items-center justify-center w-full h-full absolute bg-black overflow-hidden">
+      <img
+        src={building_web}
+        id="#image5"
+        alt="svg of builders"
+        className="absolute z-20 h-96 w-96 translate-x-78 -translate-y-52"
+      />
       <div
-        className="relative bg-black h-52 w-60 translate-x-36 -z-20"
+        className=" bg-black h-80 w-80  translate-x-78 -translate-y-52 -z-20"
         style={Design}
       />
 
@@ -82,7 +89,7 @@ const Fifth_page = () => {
       <MeetTheTeam top={600} left={10} />
 
       <div className="absolute -z-21 py-6 px-9 rounded-full bg-black bg-opacity-20 left-50 shadow-glow">
-        <div className="relative z-20 flex flex-rows z-12">
+        <div className="relative z-20 flex flex-rows">
           <AnimatedTooltip items={people} />
         </div>
       </div>
