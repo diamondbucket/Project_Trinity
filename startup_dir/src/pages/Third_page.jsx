@@ -15,7 +15,10 @@ const BottompGradient = () => {
 
 const MainPage = () => {
   return (
-    <div className="relative   justify-center bg-black text-white overflow-hidden w-full h-full">
+    <div
+      id="Features"
+      className="relative   justify-center bg-black text-white overflow-hidden w-full h-full"
+    >
       <TopGradient />
       <div className="bg-purple-radial h-screen flex items-center justify-center">
         <div>

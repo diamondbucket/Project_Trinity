@@ -80,7 +80,7 @@ const Fifth_page = () => {
       <MeetTheTeam top={400} left={10} />
       <MeetTheTeam top={500} left={10} />
       <MeetTheTeam top={600} left={10} />
-      <div className="absolute -z-21 py-10 px-20 rounded-full bg-purple-400 bg-opacity-5  left-50 shadow-glow">
+      <div className="absolute -z-21 py-10 px-20 rounded-full bg-black bg-opacity-85  left-50 shadow-glow">
         <div className="relative z-20 flex flex-rows">
           <AnimatedTooltip items={people} />
         </div>
