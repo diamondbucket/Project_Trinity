@@ -114,7 +114,7 @@ const Main = () => {
       }}
       className="z-21"
     >
-      <div style={noiseBackgroundStyle}></div>
+      {/* <div style={noiseBackgroundStyle}></div> */}
       <Navbar />
       <div id="Main" style={{ flex: "1" }}>
         <div className="overflow-hidden bg-black w-full h-full flex items-center justify-center">

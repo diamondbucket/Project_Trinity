@@ -1,6 +1,5 @@
 import React from "react";
 import { AnimatedTooltip } from "../components/ui/animated-tooltip";
-import building_web from "../assets/building_web.svg";
 import cat from "../assets/cat.svg";
 
 const MeetTheTeam = ({ top = 10, left = 10 }) => {
@@ -9,14 +8,12 @@ const MeetTheTeam = ({ top = 10, left = 10 }) => {
     left: `${left}px`,
   };
   return (
-    <div className="absolute w-full h-full ">
-      <h1
-        className={`absolute -m-1 text-9xl font-bold bg-gradient-to-r from-zinc-100  to-white inline-block font-[POPPINS] text-transparent bg-clip-text`}
-        style={position_style}
-      >
-        Meet the team
-      </h1>
-    </div>
+    <h1
+      className={`absolute -m-1 text-9xl font-bold bg-purple-300 inline-block font-[POPPINS] text-transparent bg-clip-text`}
+      style={position_style}
+    >
+      Meet the team
+    </h1>
   );
 };
 
@@ -65,30 +62,16 @@ const Fifth_page = () => {
         "https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3534&q=80",
     },
   ];
-  const Design = {
-    zIndex: "1", // Lower than the noise background's z-index of 2
-  };
+
   return (
-    <div className="flex items-center justify-center w-full h-full absolute bg-black overflow-hidden">
-      <img
-        src={building_web}
-        id="#image5"
-        alt="svg of builders"
-        className="absolute z-20 h-96 w-96 translate-x-78 -translate-y-52"
-      />
+    <div className="relative flex flex-col items-center justify-center w-full min-h-screen bg-gradient-to-t from-black via-purple-950 to-black overflow-hidden">
       <img
         src={cat}
-        d="#image6"
         alt="svg of builders"
-        className="absolute z-30 h-40 w-40 translate-x-96 "
-      />
-
-      <div
-        className=" bg-black h-80 w-80  translate-x-78 -translate-y-52 -z-20"
-        style={Design}
+        className="absolute z-30 h-40 w-40 translate-x-96"
       />
       <h1 className="absolute text-white font-bold text-4xl translate-x-96 translate-y-11 z-40">
-        Be sleow
+        Be slow
       </h1>
       <MeetTheTeam top={0} />
       <MeetTheTeam top={100} left={10} />
@@ -97,8 +80,7 @@ const Fifth_page = () => {
       <MeetTheTeam top={400} left={10} />
       <MeetTheTeam top={500} left={10} />
       <MeetTheTeam top={600} left={10} />
-
-      <div className="absolute -z-21 py-6 px-9 rounded-full bg-black bg-opacity-20 left-50 shadow-glow">
+      <div className="absolute -z-21 py-10 px-20 rounded-full bg-purple-400 bg-opacity-5  left-50 shadow-glow">
         <div className="relative z-20 flex flex-rows">
           <AnimatedTooltip items={people} />
         </div>

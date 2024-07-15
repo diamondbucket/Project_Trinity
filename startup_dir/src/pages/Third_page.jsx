@@ -1,9 +1,22 @@
 import React from "react";
 import AtomBackground from "../components/Atombackground";
 
+const TopGradient = () => {
+  return (
+    <div className="absolute top-0 w-full h-20 bg-gradient-to-b from-black via-[#2a003649] to-transparent "></div>
+  );
+};
+
+const BottompGradient = () => {
+  return (
+    <div className="absolute bottom-0 w-full h-20 bg-gradient-to-t from-black via-[#2a003649] to-transparent "></div>
+  );
+};
+
 const MainPage = () => {
   return (
     <div className="relative   justify-center bg-black text-white overflow-hidden w-full h-full">
+      <TopGradient />
       <div className="bg-purple-radial h-screen flex items-center justify-center">
         <div>
           {/* Radial gradient background */}
@@ -52,6 +65,7 @@ const MainPage = () => {
           </div>
         </div>
       </div>
+      <BottompGradient />
     </div>
   );
 };
