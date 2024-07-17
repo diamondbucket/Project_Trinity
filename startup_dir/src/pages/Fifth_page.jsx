@@ -21,45 +21,38 @@ const Fifth_page = () => {
   const people = [
     {
       id: 1,
-      name: "John Doe",
-      designation: "Software Engineer",
+      name: "Gokul",
+      designation: "frontend Developer",
       image:
-        "https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3387&q=80",
+        "https://images.unsplash.com/photo-1534534502714-2828e7c540d0?q=80&w=1994&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       id: 2,
-      name: "Robert Johnson",
-      designation: "Product Manager",
+      name: "Pranav",
+      designation: "frontend Developer",
       image:
-        "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
+        "https://i.pinimg.com/564x/9e/d2/69/9ed269f44442723ad25ea9c7cae2c02a.jpg",
     },
     {
       id: 3,
-      name: "Jane Smith",
-      designation: "Data Scientist",
+      name: "Thirumoolar",
+      designation: "Designer and Backend Developer",
       image:
-        "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
+        "https://i.pinimg.com/564x/e0/87/7c/e0877c5fbec4d096a4334a09bbe25ef5.jpg",
     },
     {
       id: 4,
-      name: "Emily Davis",
-      designation: "UX Designer",
+      name: "Harikrishnan",
+      designation: "React Native Developer",
       image:
-        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGF2YXRhcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
+        "https://i.pinimg.com/564x/81/9a/e2/819ae27dd47cd86e5486ce43439ae408.jpg",
     },
     {
       id: 5,
-      name: "Tyler Durden",
-      designation: "Soap Developer",
+      name: "Kaviya",
+      designation: "Data Analyst",
       image:
-        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80",
-    },
-    {
-      id: 6,
-      name: "Dora",
-      designation: "The Explorer",
-      image:
-        "https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3534&q=80",
+        "https://i.pinimg.com/736x/43/8b/74/438b747628f8f2a0ddfce090595c9806.jpg",
     },
   ];
 
