@@ -36,7 +36,7 @@ export const CardStack = ({
         newArray.unshift(newArray.pop()!); // move the last element to the front
         return newArray;
       });
-    }, 5000);
+    }, 6000);
   };
 
   return (
@@ -51,7 +51,7 @@ export const CardStack = ({
             }}
             animate={{
               top: index * -CARD_OFFSET,
-              scale: 1 - index * SCALE_FACTOR, // decrease scale for cards that are behind
+              scale: 1.5 - index * SCALE_FACTOR, // decrease scale for cards that are behind
               zIndex: cards.length - index, //  decrease z-index for the cards that are behind
             }}
           >
@@ -59,12 +59,10 @@ export const CardStack = ({
               {card.content}
             </div>
             <div>
-              <p className="text-neutral-500 font-medium dark:text-white">
-                {card.name}
-              </p>
-              <p className="text-neutral-400 font-normal dark:text-neutral-200">
+              <p className="text-purple-600 font-bold">{card.name}</p>
+              {/* <p className="text-neutral-700 font-normal ">
                 {card.designation}
-              </p>
+              </p> */}
             </div>
           </motion.div>
         );
