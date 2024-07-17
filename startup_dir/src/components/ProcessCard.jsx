@@ -1,50 +1,38 @@
 // src/components/ProcessCard.js
 import React from "react";
+import Hexagon from "../assets/noun-hexagon-5881596.svg";
 
 const ProcessCard = () => {
   return (
     <div
-      className="bg-white p-8 rounded-3xl shadow-lg w-full max-w-3xl mx-auto relative overflow-hidden"
-      style={{ minHeight: "150vh" }}
-    > 
-      <h2 className="text-2xl font-bold mb-4">
-        The world moves quickly; we keep up. Clear the clutter with our process
-      </h2>
-      <div className="relative pl-8">
-        <div className="absolute left-0 h-full border-l-4 border-gray-300"></div>
-
-        {/* Squiggle Line SVG */}
-        <svg
-          className="absolute right-0 top-1/4 w-24 h-auto"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 100 100"
-          fill="none"
-          stroke="black"
-          strokeWidth="2"
-        >
-          <path d="M0 100 Q 50 0 100 100" />
-        </svg>
-
+      className="bg-white p-10 rounded-[100px] shadow-lg w-[800px] relative overflow-hidden"
+      style={{ minHeight: "100vh" }}
+    > <div className="w-[900px] py-20">
+        <h2 className="text-4xl font-bold translate-x-9 ">The world moves quickly; we keep up.</h2>
+        <p className="text-4xl font-bold translate-x-16"> Clear the clutter with our process</p>
+      </div>
+      <div className=" bg-red-500 w-1 h-[500px] translate-x-[62px] translate-y-"></div>
+      <div>
+          <div className="mb-8">
+            <div className="flex items-center mb-2">
+              <img src={Hexagon} alt="image" className="w-14 translate-x-9 -translate-y-[520px]"></img>
+              <h3 className="text-3xl font-semibold  px-[80px] -translate-y-[527px] ">Book a call</h3>
+              <p className="text-red-600 -translate-y-[527px] font-bold text-xl -translate-x-[316px]">1</p>
+            </div>
+            <div>
+              <p className="text-black  text-xl w-[720px] px-[140px] -translate-y-[530px] ">
+              Choose a date and time to book a strategic meeting, where we will
+              define the project objectives, timeline, and financial approach.
+              </p>
+            </div>  
+          </div>
         <div className="mb-8">
           <div className="flex items-center mb-2">
-            <div className="bg-black text-white rounded-full h-8 w-8 flex items-center justify-center mr-4">
-              1
-            </div>
-            <h3 className="text-xl font-semibold">Book a call</h3>
+          <img src={Hexagon} alt="image" className="w-14 translate-x-9 -translate-y-[470px] "></img>
+            <h3 className="text-3xl font-semibold  px-[80px] -translate-y-[470px]">Receive a Proposal</h3>
+            <p className="text-red-600  font-bold text-xl -translate-y-[578px] -translate-x-[433px]">1</p>
           </div>
-          <p className="text-gray-700">
-            Choose a date and time to book a strategic meeting, where we will
-            define the project objectives, timeline, and financial approach.
-          </p>
-        </div>
-        <div className="mb-8">
-          <div className="flex items-center mb-2">
-            <div className="bg-black text-white rounded-full h-8 w-8 flex items-center justify-center mr-4">
-              2
-            </div>
-            <h3 className="text-xl font-semibold">Receive a Proposal</h3>
-          </div>
-          <p className="text-gray-700">
+          <p className="text-black font-semibold w-[650px] px-[140px]">
             We'll deliver a tailored project layout to you, inclusive of
             objectives, a sequence schedule, and cost estimates within a period
             of 1-2 business days.
@@ -52,43 +40,16 @@ const ProcessCard = () => {
         </div>
         <div className="mb-8">
           <div className="flex items-center mb-2">
-            <div className="bg-black text-white rounded-full h-8 w-8 flex items-center justify-center mr-4">
-              3
-            </div>
-            <h3 className="text-xl font-semibold">Kickoff the Project</h3>
+            <img src={Hexagon} alt="image" className="w-16 translate-x-8 translate-y-2"></img>
+              <h3 className="text-3xl font-semibold  px-[80px]">Kickoff the Project</h3>
           </div>
-          <p className="text-gray-700">
+          <p className="text-black font-semibold w-[650px] px-[140px]">
             Sign the contract, send the deposit, lean back, and let us do our
             thing. We'll invite you to a design review meeting in 5-7 business
             days.
           </p>
         </div>
-        <div className="mb-8">
-          <div className="flex items-center mb-2">
-            <div className="bg-black text-white rounded-full h-8 w-8 flex items-center justify-center mr-4">
-              4
-            </div>
-            <h3 className="text-xl font-semibold">Project Execution</h3>
-          </div>
-          <p className="text-gray-700">
-            We'll start working on the project as per the agreed timeline and
-            milestones. Regular updates will be provided to ensure transparency
-            and alignment.
-          </p>
-        </div>
-        <div>
-          <div className="flex items-center mb-2">
-            <div className="bg-black text-white rounded-full h-8 w-8 flex items-center justify-center mr-4">
-              5
-            </div>
-            <h3 className="text-xl font-semibold">Final Delivery</h3>
-          </div>
-          <p className="text-gray-700">
-            After completing the project, we'll deliver the final product,
-            gather feedback, and ensure everything meets your expectations.
-          </p>
-        </div>
-      </div>
+      </div>  
     </div>
   );
 };
