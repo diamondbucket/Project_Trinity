@@ -59,7 +59,7 @@ export const CardStack = ({
               {card.content}
             </div>
             <div>
-              <p className="text-purple-600 font-bold">{card.name}</p>
+              <p className="text-purple-900 font-bold">{card.name}</p>
               {/* <p className="text-neutral-700 font-normal ">
                 {card.designation}
               </p> */}

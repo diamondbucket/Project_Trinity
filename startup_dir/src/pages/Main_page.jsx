@@ -149,7 +149,7 @@ const Main = () => {
           >
             <p
               style={{ ...textStyle, fontSize: "40px" }}
-              className="font-extrabold "
+              className="font-bold "
             >
               SHAPING AI <span className="text-purple-700">HORIZONS</span>
             </p>

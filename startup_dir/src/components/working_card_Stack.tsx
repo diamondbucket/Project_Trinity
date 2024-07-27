@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { CardStack } from "../components/ui/card-stack";
 import { cn } from "../utils/cn";
+
 export function CardStackDemo() {
   const [open, SetOpen] = useState(false);
   return (
@@ -11,14 +12,14 @@ export function CardStackDemo() {
           onMouseEnter={() => SetOpen(true)}
           onMouseLeave={() => SetOpen(false)}
         >
-          <div className="bg-gradient-to-r from-purple-800 via-purple-600 to-purple-500 text-transparent inline-block bg-clip-text font-bold ">
+          <div className="bg-gradient-to-r from-purple-800 via-purple-600 to-purple-900 text-transparent inline-block bg-clip-text font-bold ">
             FAQ
           </div>
           <span
             style={{
               transform: open ? "scaleX(1)" : "scaleX(0)",
             }}
-            className="absolute -bottom-2 -left-2 -right-2 h-1 origin-left rounded-full bg-purple-500 transition-transform duration-300 ease-out"
+            className="absolute -bottom-2 -left-2 -right-2 h-1 origin-left rounded-full bg-purple-800 shadow-lg shadow-purple-600 transition-transform duration-300 ease-out"
           />
         </div>
       </div>
@@ -38,7 +39,7 @@ export const Highlight = ({
   return (
     <span
       className={cn(
-        "font-bold bg-purple-100 text-purple-500 px-1 py-0.5",
+        "font-bold bg-purple-100 text-purple-900 px-1 py-0.5",
         className
       )}
     >

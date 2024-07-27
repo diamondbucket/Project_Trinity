@@ -21,8 +21,7 @@ const Navbar = () => {
           onClick={closeMenu}
         >
           <div className="font-bold text-2xl cursor-pointer flex items-center font-[Poppins] text-gray-800">
-            <Si1Password size={20} color="white" />
-            <span className="ml-2 text-white">Trinity</span>
+            <span className="ml-2 text-white">✺ Trinity</span>
           </div>
         </Link>
         <div className="hidden md:flex items-center space-x-4">
