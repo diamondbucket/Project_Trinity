@@ -151,7 +151,8 @@ const Main = () => {
               style={{ ...textStyle, fontSize: "40px" }}
               className="font-bold "
             >
-              SHAPING AI <span className="text-purple-700">HORIZONS</span>
+              SHAPING AI{" "}
+              <span className="text-purple-700 font-black">HORIZONS</span>
             </p>
           </div>
 
