@@ -5,13 +5,13 @@ const Second_page = () => {
   return (
     <div className="bg-black h-screen  overflow-hidden relative flex-col items-start">
       <div>
-        <h1 className="lg:text-7xl text-4xl font-bold m-10 lg:py-10 lg:px-36 text-purple-700">
+        <h1 className="lg:text-7xl text-6xl w-max lg:w-max font-bold m-14 lg:py-10 lg:px-36 text-purple-700 -translate-y-4 ">
           At trinity
         </h1>
       </div>
-      <div className="flex py-10">
-        <div className="p-6 h-56 lg:w-3/4 w-96">
-          <p className="text-white lg:px-28 lg:py-15 lg:text-2xl text-xl  py-36 px-10 w-[500px]">
+      <div className="flex">
+        <div className="p-6">
+          <p className="text-white lg:px-16 lg:py-15 lg:text-2xl text-lg lg:py-0 py-48 translate-x-4 lg:w-[1000px] ">
             We’re dedicated to we are at the forefront of technological
             innovation, dedicated to empowering businesses with advanced AI,
             machine learning, and web development solutions. Our goal is to help
@@ -21,7 +21,7 @@ const Second_page = () => {
         </div>
         <div className="flex -mt-24">
           <video
-            className="absolute lg:h-auto h-52 lg:-z-1 lg:-translate-x-20  lg:w-[800px] -translate-x-80"
+            className="absolute lg:h-2/3 h-48 lg:-z-1 lg:-translate-y-24 translate-y-20 lg:-translate-x-32 lg:w-[800px] -translate-x-80"
             autoPlay
             loop
             muted

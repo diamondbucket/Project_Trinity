@@ -18,7 +18,7 @@ const ProcessCard = () => {
             <div className="flex relative items-center mb-2">
               <img src={Hexagon} alt="image" className="lg:w-14 relative lg:translate-x-9 lg:-translate-y-[520px] w-10 -translate-x-[18px] -translate-y-[610px]"></img>
               <h3 className="lg:text-3xl lg:font-semibold  lg:px-[80px] lg:-translate-y-[527px] text-2xl ">Book a call</h3>
-              <p className="text-red-600 -translate-y-[525px] font-bold text-l -translate-x-[315px]">1</p>
+              <p className="text-white -translate-y-[525px] font-bold text-l -translate-x-[315px]">1</p>
             </div>
             <div>
               <p className="text-black  text-xl w-[720px] px-[140px] -translate-y-[530px] ">
@@ -31,7 +31,7 @@ const ProcessCard = () => {
           <div className="flex items-center mb-2">
           <img src={Hexagon} alt="image" className="w-14 translate-x-9 -translate-y-[480px] "></img>
             <h3 className="text-3xl font-semibold  px-[80px] -translate-y-[485px]">Receive a Proposal</h3>
-            <p className="text-red-600  font-bold text-l -translate-y-[486px] -translate-x-[432px]">2</p>
+            <p className="text-white  font-bold text-l -translate-y-[486px] -translate-x-[432px]">2</p>
           </div>
           <p className="text-black text-xl w-[680px] px-[140px] -translate-y-[485px] ">
             We'll deliver a tailored project layout to you, inclusive of
@@ -49,7 +49,7 @@ const ProcessCard = () => {
             thing. We'll invite you to a design review meeting in 5-7 business
             days.
           </p>
-          <p className="text-red-600  font-bold text-l -translate-y-[595px] translate-x-[60px] ">3</p>
+          <p className="text-white  font-bold text-l -translate-y-[595px] translate-x-[60px] ">3</p>
           <img src={Stroke} className="w-[500px] -translate-y-[1300px] translate-x-[520px]"/>
         </div>
       </div>  
