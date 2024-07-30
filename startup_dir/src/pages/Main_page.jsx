@@ -110,9 +110,9 @@ const Main = () => {
       style={{
         position: "relative",
 
-        minHeight: "100vh",
+        minHeight: "screen",
       }}
-      className="z-21"
+      
     >
       {/* <div style={noiseBackgroundStyle}></div> */}
       <Navbar />

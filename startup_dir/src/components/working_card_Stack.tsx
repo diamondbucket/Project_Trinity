@@ -6,7 +6,7 @@ import { cn } from "../utils/cn";
 export function CardStackDemo() {
   const [open, SetOpen] = useState(false);
   return (
-    <div className="h-[40rem] flex items-center justify-center w-full">
+    <div className="lg:h-[40rem] lg:flex  lg:items-center lg:justify-center lg:w-full">
       <div className="relative text-white text-9xl translate-x-1/4 -left-96">
         <div
           onMouseEnter={() => SetOpen(true)}
