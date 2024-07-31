@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <div className=" z-50 py-3 overflow-hidden bg-black">
-      <div className="py-3 pb-4 md:px-10 px-7 bg-black flex justify-between items-center">
+      <div className="py-3 pb-4 lg:px-10 px-7 -translate-x-2 lg:-translate-x-0 bg-black flex justify-between items-center ">
         <Link
           to="main"
           spy={true}
@@ -20,7 +20,7 @@ const Navbar = () => {
           duration={700}
           onClick={closeMenu}
         >
-          <div className="font-bold text-2xl cursor-pointer flex items-center font-[Poppins] text-gray-800">
+          <div className="font-bold text-lg lg:text-2xl cursor-pointer flex items-center font-[Poppins] text-gray-800 lg:text-gray-800 ">
             <span className="ml-2 text-white">✺ Trinity</span>
           </div>
         </Link>
@@ -39,7 +39,6 @@ const Navbar = () => {
       {click && (
         <div className="md:hidden flex flex-col items-center space-y-4">
           <DottedNavbar />
-          <JoinUsButton />
         </div>
       )}
     </div>

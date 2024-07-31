@@ -99,10 +99,8 @@ const Main = () => {
   };
 
   const textStyle = {
-    color: "white",
-    fontSize: "24px",
     textAlign: "center",
-    zIndex: "5",
+    zIndex: 5,
   };
 
   return (
@@ -112,7 +110,6 @@ const Main = () => {
 
         minHeight: "screen",
       }}
-      
     >
       {/* <div style={noiseBackgroundStyle}></div> */}
       <Navbar />
@@ -129,8 +126,8 @@ const Main = () => {
             }}
           >
             <p
-              style={{ ...textStyle, fontSize: "50px" }}
-              className="font-extrabold tracking-wide opacity-10"
+              style={textStyle}
+              className="text-lg lg:text-5xl font-extrabold tracking-wide opacity-10 text-white"
             >
               TRINITY
             </p>
@@ -148,8 +145,8 @@ const Main = () => {
             }}
           >
             <p
-              style={{ ...textStyle, fontSize: "40px" }}
-              className="font-bold "
+              style={{ ...textStyle }}
+              className="text-xl lg:text-5xl font-bold tracking-wide text-white w-80 lg:w-full"
             >
               SHAPING AI{" "}
               <span className="text-purple-700 font-black">HORIZONS</span>
