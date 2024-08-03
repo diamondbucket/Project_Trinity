@@ -1,18 +1,17 @@
-"use client";
 import React, { useState } from "react";
 import { CardStack } from "../components/ui/card-stack";
 import { cn } from "../utils/cn";
 
 export function CardStackDemo() {
-  const [open, SetOpen] = useState(false);
+  const [open, setOpen] = useState(false);
   return (
-    <div className="lg:h-[100vh] lg:flex flex-row lg:items-center lg:justify-center lg:w-full">
-      <div className="relative text-white text-9xl translate-x-1/4 -left-96">
+    <div className="lg:h-[100vh] flex flex-col space-y-5 lg:flex-row items-center justify-center w-full p-4">
+      <div className="relative text-white text-5xl lg:text-9xl translate-x-0 lg:translate-x-1/4 lg:-left-96 mb-8 lg:mb-0">
         <div
-          onMouseEnter={() => SetOpen(true)}
-          onMouseLeave={() => SetOpen(false)}
+          onMouseEnter={() => setOpen(true)}
+          onMouseLeave={() => setOpen(false)}
         >
-          <div className="bg-gradient-to-r from-purple-800 via-purple-600 to-purple-900 text-transparent inline-block bg-clip-text font-bold ">
+          <div className="bg-gradient-to-r from-purple-800 via-purple-600 to-purple-900 text-transparent inline-block bg-clip-text p-16 font-bold ">
             FAQ
           </div>
           <span

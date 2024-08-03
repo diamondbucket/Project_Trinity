@@ -4,7 +4,7 @@ import ProcessCard from "../components/ProcessCard";
 
 const Fourth_page = () => {
   return (
-    <div className="w-full min-h-screen bg-black flex items-center justify-center p-4 overflow-auto">
+    <div className="w-full min-h-screen bg-black  items-center hidden md:block lg:flex justify-center p-4 overflow-auto">
       <ProcessCard />
     </div>
   );

@@ -6,6 +6,7 @@ import LowerhandSvg from "../assets/lowerhand_1.svg";
 import ShinyTriangleSvg from "../assets/shiny_triangle.svg";
 import NoiseImage from "../assets/noise.png";
 import Navbar from "../components/Navbar";
+import JoinUsButton from "../components/JoinUsButton";
 
 const Main = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -114,7 +115,7 @@ const Main = () => {
       {/* <div style={noiseBackgroundStyle}></div> */}
       <Navbar />
       <div id="Main" style={{ flex: "1" }}>
-        <div className="overflow-hidden bg-black w-full h-full flex items-center justify-center">
+        <div className="overflow-hidden bg-black w-full h-100vh flex items-center justify-center">
           <div
             style={{
               position: "absolute",
@@ -127,7 +128,7 @@ const Main = () => {
           >
             <p
               style={textStyle}
-              className="text-lg lg:text-5xl font-extrabold tracking-wide opacity-10 text-white"
+              className="text-2xl lg:text-5xl font-extrabold tracking-wide  text-white"
             >
               TRINITY
             </p>
@@ -146,10 +147,10 @@ const Main = () => {
           >
             <p
               style={{ ...textStyle }}
-              className="text-xl lg:text-5xl font-bold tracking-wide text-white w-80 lg:w-full"
+              className="text-xl lg:text-5xl text-2xl font-bold tracking-wide text-white w-80 lg:w-full"
             >
               SHAPING AI{" "}
-              <span className="text-purple-700 font-black">HORIZONS</span>
+              <span className="text-purple-700 text-2xl font-black">HORIZONS</span>
             </p>
           </div>
 
@@ -175,6 +176,9 @@ const Main = () => {
             className="z-20"
           />
         </div>
+        <div className="bg-black justify-center lg:hidden md:block flex ">
+        <JoinUsButton />
+      </div>
       </div>
     </div>
   );

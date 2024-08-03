@@ -1,5 +1,8 @@
 import React from "react";
-
+import insta from "../assets/instagram.svg";
+import linkedin from "../assets/linkedin.svg";
+import X from "../assets/site_X.svg";
+import mail from "../assets/email1.svg";
 const Footer = () => {
   const handleScroll = (e, targetId) => {
     e.preventDefault();
@@ -8,11 +11,11 @@ const Footer = () => {
 
   return (
     <div className="w-screen h-[600px] bg-gradient-to-b from-black to-purple-600 text-white p-8 flex flex-col justify-end">
-      <div className="container flex justify-between items-center -translate-y-36">
-        <div className="flex items-center space-x-4">
-          <div className="text-4xl font-bold">✺ TRINITY</div>
+      <div className="container flex justify-between items-start -translate-y-36">
+        <div className="flex items-center">
+          <div className="lg:text-4xl text-xl font-bold">✺TRINITY</div>
         </div>
-        <div className="flex space-x-8">
+        <div className="flex lg:space-x-8 space-x-5 ">
           <a
             href="#Main"
             onClick={(e) => handleScroll(e, "#Main")}
@@ -28,13 +31,6 @@ const Footer = () => {
             Features
           </a>
           <a
-            href="#Pricing"
-            onClick={(e) => handleScroll(e, "#Pricing")}
-            className="hover:underline"
-          >
-            Pricing
-          </a>
-          <a
             href="#Faq"
             onClick={(e) => handleScroll(e, "#Faq")}
             className="hover:underline"
@@ -46,37 +42,37 @@ const Footer = () => {
 
       <div className="border-t border-gray-300 mt-4 -translate-y-20"></div>
 
-      <div className="container mx-auto mt-4 flex justify-center items-center">
-        <div className="flex space-x-4">
-          <a
-            href="https://twitter.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-xl hover:text-gray-400"
-          >
-            <i className="fab fa-twitter"></i>
-          </a>
+      <div className="container mx-fill mt-4 flex justify-center ">
+        <div className="flex space-x-16 lg:text-xl justify-between text-sm">
           <a
             href="https://instagram.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-xl hover:text-gray-400"
+            className=" hover:text-gray-400"
           >
-            <i className="fab fa-instagram"></i>
+            <img src={insta} className="lg:h-10 h-7"/>
+          </a>
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className=" hover:text-gray-400"
+          >
+            <img src={X} className="lg:h-10 h-7"/>
           </a>
           <a
             href="https://linkedin.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-xl hover:text-gray-400"
+            className=" hover:text-gray-400"
           >
-            <i className="fab fa-linkedin"></i>
+            <img src={linkedin} className="lg:h-10 h-7"/>
           </a>
           <a
-            href="mailto:info@example.com"
-            className="text-xl hover:text-gray-400"
+            href="mailto:trinity.getsolutions@gmail.com"
+            className=" hover:text-gray-400   "
           >
-            <i className="fas fa-envelope"></i>
+            <img src={mail} className="lg:h-12 h-7"/>
           </a>
         </div>
       </div>
