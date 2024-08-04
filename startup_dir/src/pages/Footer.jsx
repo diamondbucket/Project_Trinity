@@ -3,6 +3,8 @@ import insta from "../assets/instagram.svg";
 import linkedin from "../assets/linkedin.svg";
 import X from "../assets/site_X.svg";
 import mail from "../assets/email1.svg";
+import { Color } from "three/src/Three.js";
+
 const Footer = () => {
   const handleScroll = (e, targetId) => {
     e.preventDefault();
@@ -50,7 +52,7 @@ const Footer = () => {
             rel="noopener noreferrer"
             className=" hover:text-gray-400"
           >
-            <img src={insta} className="lg:h-10 h-7"/>
+            <img src={insta} className="lg:h-10 h-7" />
           </a>
           <a
             href="https://twitter.com"
@@ -58,7 +60,7 @@ const Footer = () => {
             rel="noopener noreferrer"
             className=" hover:text-gray-400"
           >
-            <img src={X} className="lg:h-10 h-7"/>
+            <img src={X} className="lg:h-10 h-7" />
           </a>
           <a
             href="https://linkedin.com"
@@ -66,13 +68,13 @@ const Footer = () => {
             rel="noopener noreferrer"
             className=" hover:text-gray-400"
           >
-            <img src={linkedin} className="lg:h-10 h-7"/>
+            <img src={linkedin} className="lg:h-10 h-7" />
           </a>
           <a
             href="mailto:trinity.getsolutions@gmail.com"
             className=" hover:text-gray-400   "
           >
-            <img src={mail} className="lg:h-12 h-7"/>
+            <img src={mail} className=" lg:h-12 h-7" />
           </a>
         </div>
       </div>

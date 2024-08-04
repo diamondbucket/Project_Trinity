@@ -57,7 +57,7 @@ const Fifth_page = () => {
   ];
 
   return (
-    <div className="relative flex flex-col items-center justify-center w-full min-h-screen bg-gradient-to-t from-black via-purple-950 to-black overflow-hidden">
+    <div id="about" className="relative flex flex-col items-center justify-center w-full min-h-screen bg-gradient-to-t from-black via-purple-950 to-black overflow-hidden">
       <img
         src={cat}
         alt="svg of builders"

@@ -6,7 +6,7 @@ import LowerhandSvg from "../assets/lowerhand_1.svg";
 import ShinyTriangleSvg from "../assets/shiny_triangle.svg";
 import NoiseImage from "../assets/noise.png";
 import Navbar from "../components/Navbar";
-import JoinUsButton from "../components/JoinUsButton";
+import styled from "styled-components";
 
 const Main = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -42,7 +42,6 @@ const Main = () => {
       { scale: 2 }, // Initial scale (big)
       {
         scale: 0.2, // Final scale (small)
-
         duration: 1, // Duration of the animation
         ease: "power1.inOut", // Easing function for smooth easing out
         scrollTrigger: {
@@ -79,7 +78,6 @@ const Main = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
-
     opacity: "0.08", // Adjust the opacity as needed
     position: "fixed",
     top: 0,
@@ -89,16 +87,6 @@ const Main = () => {
     zIndex: "2",
   };
 
-  const triangleStyle = {
-    position: "absolute", // Position it absolutely
-    width: "400px", // Adjust width as needed
-    height: "400px", // Adjust height as needed
-    top: "50%", // Position it in the center vertically
-    left: "50%", // Position it in the center horizontally
-    transform: "translate(-45%, -35%)", // Center it perfectly
-    zIndex: "1", // Make sure it is above the other SVGs
-  };
-
   const textStyle = {
     textAlign: "center",
     zIndex: 5,
@@ -106,15 +94,14 @@ const Main = () => {
 
   return (
     <div
+    id="Main"
       style={{
         position: "relative",
-
         minHeight: "screen",
       }}
     >
-      {/* <div style={noiseBackgroundStyle}></div> */}
       <Navbar />
-      <div id="Main" style={{ flex: "1" }}>
+      <div  style={{ flex: "1" }}>
         <div className="overflow-hidden bg-black w-full h-100vh flex items-center justify-center">
           <div
             style={{
@@ -147,10 +134,12 @@ const Main = () => {
           >
             <p
               style={{ ...textStyle }}
-              className="text-xl lg:text-5xl text-2xl font-bold tracking-wide text-white w-80 lg:w-full"
+              className="lg:text-5xl text-2xl font-bold tracking-wide text-white w-80 lg:w-full"
             >
               SHAPING AI{" "}
-              <span className="text-purple-700 text-2xl font-black">HORIZONS</span>
+              <span className="text-purple-700 text-2xl lg:text-5xl font-black">
+                HORIZONS
+              </span>
             </p>
           </div>
 
@@ -168,20 +157,51 @@ const Main = () => {
             style={svgStyle_2}
             className="z-15"
           />
-          <img
+          <StyledTriangle
             id="triangle"
             src={ShinyTriangleSvg}
             alt="Shiny Triangle"
-            style={triangleStyle}
-            className="z-20"
           />
         </div>
-        <div className="bg-black justify-center lg:hidden md:block flex ">
-        <JoinUsButton />
-      </div>
       </div>
     </div>
   );
 };
+
+const StyledTriangle = styled.img`
+  position: absolute;
+  width: 30vw;
+  height: 30vw;
+  max-width: 400px;
+  max-height: 400px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-45%, -35%);
+  z-index: 1;
+
+  @media (max-width: 480px) {
+    width: 40vw;
+    height: 40vw;
+    transform: translate(-43%, -25%);
+  }
+`;
+
+const svgStyle = styled.img`
+  width: 40vw;
+  height: 40vw;
+  max-width: 700px;
+  max-height: 700px;
+  transform: ${({ rotationAngle, translateX, translateY }) =>
+    `rotate(${rotationAngle}deg) translate(${translateX}px, ${translateY}px)`};
+
+  @media (max-width: 480px) {
+    width: 60vw;
+    height: 60vw;
+    transform: ${({ rotationAngle, translateX, translateY }) =>
+      `rotate(${rotationAngle}deg) translate(${
+        translateX - 20
+      }px, ${translateY}px)`}; // Adjust the translation slightly to the left
+  }
+`;
 
 export default Main;

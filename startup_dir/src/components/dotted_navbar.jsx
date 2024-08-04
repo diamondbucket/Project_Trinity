@@ -1,31 +1,40 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
 
-const dotted_navbar = () => {
+const DottedNavbar = () => {
+  const handleScroll = (e, target) => {
+    e.preventDefault();
+    document.querySelector(target).scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <ul className="relative py-4 px-10 rounded-full flex space-x-32 border-2 border-dotted overflow-hidden border-purple-600">
-      <li className="relative group z-20 text-white cursor-pointer">
-        <FlyoutLink>Product</FlyoutLink>
-      </li>
-      <li className="relative group z-20 text-white cursor-pointer">
-        <FlyoutLink>Resources</FlyoutLink>
-      </li>
-      <li className="relative group z-20 text-white cursor-pointer">
-        <FlyoutLink>Community</FlyoutLink>
-      </li>
+      <FlyoutLink href="#Features" handleScroll={handleScroll}>
+        Product
+      </FlyoutLink>
+      <FlyoutLink href="#FAQ" handleScroll={handleScroll}>
+        FAQ
+      </FlyoutLink>
+      <FlyoutLink href="#about" handleScroll={handleScroll}>
+        About Us
+      </FlyoutLink>
     </ul>
   );
 };
 
-const FlyoutLink = ({ children, href, FlyoutContent }) => {
-  const [open, SetOpen] = useState(false);
+const FlyoutLink = ({ children, href, handleScroll }) => {
+  const [open, setOpen] = useState(false);
   return (
     <div
-      onMouseEnter={() => SetOpen(true)}
-      onMouseLeave={() => SetOpen(false)}
+      onMouseEnter={() => setOpen(true)}
+      onMouseLeave={() => setOpen(false)}
       className="relative w-fit h-fit"
     >
-      <a href={href} className="relative text-white">
+      <a
+        href={href}
+        onClick={(e) => handleScroll(e, href)}
+        className="relative text-white cursor-pointer"
+      >
         {children}
         <span
           style={{
@@ -38,4 +47,4 @@ const FlyoutLink = ({ children, href, FlyoutContent }) => {
   );
 };
 
-export default dotted_navbar;
+export default DottedNavbar;
