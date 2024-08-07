@@ -74,7 +74,7 @@ const Footer = () => {
             href="mailto:trinity.getsolutions@gmail.com"
             className=" hover:text-gray-400   "
           >
-            <img src={mail} className=" lg:h-12 h-7" />
+            <img src={mail} className=" lg:h-12 h-7 -translate-y-1" />
           </a>
         </div>
       </div>

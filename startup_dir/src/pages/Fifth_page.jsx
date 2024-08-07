@@ -24,7 +24,7 @@ const Fifth_page = () => {
       name: "Gokul",
       designation: "frontend Developer",
       image:
-        "https://images.unsplash.com/photo-1534534502714-2828e7c540d0?q=80&w=1994&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://i.pinimg.com/564x/49/06/ba/4906bac618ea907df2f096ada2042986.jpg",
     },
     {
       id: 2,
@@ -54,10 +54,27 @@ const Fifth_page = () => {
       image:
         "https://i.pinimg.com/736x/43/8b/74/438b747628f8f2a0ddfce090595c9806.jpg",
     },
+    {
+      id: 6,
+      name: "Athulya",
+      designation: "Designer",
+      image:
+        "https://i.pinimg.com/564x/75/64/2d/75642d5dfc2e02a9178fd14b0a9e883b.jpg",
+    },
+    {
+      id: 7,
+      name: "Kirubhakaran",
+      designation: "Marketing Head",
+      image:
+        "https://i.pinimg.com/564x/bf/c7/b2/bfc7b27876d4e3c13d408a5cc444e6f1.jpg",
+    },
   ];
 
   return (
-    <div id="about" className="relative flex flex-col items-center justify-center w-full min-h-screen bg-gradient-to-t from-black via-purple-950 to-black overflow-hidden">
+    <div
+      id="about"
+      className="relative flex flex-col items-center justify-center w-full min-h-screen bg-gradient-to-t from-black via-purple-950 to-black overflow-hidden"
+    >
       <img
         src={cat}
         alt="svg of builders"
