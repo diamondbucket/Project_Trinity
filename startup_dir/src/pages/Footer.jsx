@@ -3,7 +3,6 @@ import insta from "../assets/instagram.svg";
 import linkedin from "../assets/linkedin.svg";
 import X from "../assets/site_X.svg";
 import mail from "../assets/email1.svg";
-import { Color } from "three/src/Three.js";
 
 const Footer = () => {
   const handleScroll = (e, targetId) => {
